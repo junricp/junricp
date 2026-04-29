@@ -2,28 +2,119 @@
 <html>
 <head>
   <title>Junric Postrano</title>
+  <style>
+    body {
+      margin: 0;
+      background: #071014;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 60px;
+      background: #0d1b22;
+      border-bottom: 2px solid cyan;
+    }
+
+    header h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .highlight {
+      color: cyan;
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    h2 {
+      color: cyan;
+      letter-spacing: 3px;
+    }
+
+    .work-grid {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .panel {
+      width: 300px;
+      height: 220px;
+      background: #111;
+      border: 1px solid cyan;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+
+    .panel img,
+    .panel video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about {
+      background: #0d1b22;
+      margin: 40px;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #1f3b46;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #0d1b22;
+      padding: 40px;
+      border-top: 2px solid cyan;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    footer li {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 
 <body>
+
   <header>
-    <h1>Junric Postrano</h1>
+    <p>$ whoami</p>
+    <h1>Hello, I'm <span class="highlight">Junric Postrano</span></h1>
+    <p>mechanic & mechanical engineering student</p>
   </header>
 
   <section>
     <h2>Previous Work</h2>
 
-    <div>
-      <img src="image1.jpg" alt="Previous work image 1" width="300">
+    <div class="work-grid">
+      <div class="panel">
+        <img src="image1.jpg" alt="Previous work image 1">
+      </div>
 
-      <video width="300" controls>
-        <source src="work-video.mp4" type="video/mp4">
-      </video>
+      <div class="panel">
+        <video controls>
+          <source src="work-video.mp4" type="video/mp4">
+        </video>
+      </div>
 
-      <img src="image2.jpg" alt="Previous work image 2" width="300">
+      <div class="panel">
+        <img src="image2.jpg" alt="Previous work image 2">
+      </div>
     </div>
   </section>
 
-  <section>
+  <section class="about">
     <h2>About Me</h2>
     <p>
       I am an experienced mechanic currently pursuing a degree in mechanical engineering.
@@ -35,10 +126,11 @@
   <footer>
     <h2>Contact Me</h2>
     <ul>
-      <li>Email: junricp@hawaii.edu.com</li>
-      <li>Phone: (not showing lol)</li>
+      <li>Email: junricp@hawaii.edu</li>
+      <li>Phone: not showing lol</li>
       <li>GitHub: junricp</li>
     </ul>
   </footer>
+
 </body>
 </html>
